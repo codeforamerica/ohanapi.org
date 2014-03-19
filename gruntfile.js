@@ -42,11 +42,9 @@ module.exports = function(grunt){
 		}, //copy
 		'gh-pages': {
 	    options: {
-	      base: 'www',
-	      clone: 'tmp',
-      	push: false
+	      base: 'www'
 	    },
-	    src: ['**/*']
+	    src: ['**']
 	  }, // gh-pages
 		watch: {
 			scripts: {
@@ -61,7 +59,9 @@ module.exports = function(grunt){
 			} //html
 		} //watch
 	}) //initConfig
+
+	var message = grunt.option('m') || 'Auto-generated commit from grunt production';
 	grunt.registerTask('default', 'watch');
-	grunt.registerTask('production', ['browserify:production','compass:compile','clean','copy','gh-pages']);
+	grunt.registerTask('production', ['browserify:production','compass:compile','clean','copy','gh-pages --gh-pages-message "'+message+'"','clean']);
 	grunt.registerTask('development', ['browserify:production','compass:compile','clean','copy']);
 } //exports
