@@ -17,6 +17,6 @@ The ohanapi.org website for the [Ohana API](https://github.com/codeforamerica/oh
 
   - Type `grunt watch` to compile the SASS into CSS when it changes.
 
-  - Type `grunt development` to compile the project into a `www`. This directory is what will be deployed to the `gh-pages` branch in the production task.
+  - Type `grunt development` to compile the project into a `www` directory. This directory is what will be deployed to the `gh-pages` branch in the production task.
 
   - Type `grunt clean` to remove the `www` directory.
