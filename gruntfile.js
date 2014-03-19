@@ -35,20 +35,21 @@ module.exports = function(grunt){
 		      {expand: true, cwd: 'src/', src: ['css/*'], dest: 'www/'},
 
 		      // copy helper.js
-		      {expand: true, cwd: 'src/', src: ['js/helper.js'], dest: 'www/'},
+		      {expand: true, cwd: 'src/', src: ['js/helper.js'], dest: 'www/'}
 
 		    ] //files
 		  } //main
 		}, //copy
 		'gh-pages': {
 	    options: {
-	      base: 'www'
+	      base: 'www',
+	      message: grunt.option('m') || 'Auto-generated commit from grunt'
 	    },
 	    src: ['**']
 	  }, // gh-pages
 		watch: {
 			scripts: {
-				files: ['src/js/app/**/*.js'],
+				files: ['src/js/**/*.js'],
 			}, //scripts
 			sass: {
 				files: ['src/sass/*.scss'],
@@ -60,8 +61,7 @@ module.exports = function(grunt){
 		} //watch
 	}) //initConfig
 
-	var message = grunt.option('m') || 'Auto-generated commit from grunt production';
 	grunt.registerTask('default', 'watch');
-	grunt.registerTask('production', ['browserify:production','compass:compile','clean','copy','gh-pages --gh-pages-message "'+message+'"','clean']);
+	grunt.registerTask('production', ['browserify:production','compass:compile','clean','copy','gh-pages','clean']);
 	grunt.registerTask('development', ['browserify:production','compass:compile','clean','copy']);
 } //exports
