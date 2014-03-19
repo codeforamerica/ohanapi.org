@@ -1,7 +1,7 @@
 ohanapi.org
 ===========
 
-The ohanapi.org website for the Ohana API project.
+The ohanapi.org website for the [Ohana API](https://github.com/codeforamerica/ohana-api) project.
 
 ## Instructions
 
