@@ -1,0 +1,674 @@
+/* ==========================================================================
+   Compass imports
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+a {
+  color: #00e; }
+
+a:visited {
+  color: #551a8b; }
+
+a:hover {
+  color: #06e; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#forkongithub a {
+  background: #03497e;
+  color: #fff;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 40px;
+  font-size: 1rem;
+  line-height: 2rem;
+  position: relative;
+  transition: 0.5s;
+  z-index: 99999; }
+
+#forkongithub a:hover {
+  background: #0596d5;
+  color: #fff; }
+
+#forkongithub a::before,
+#forkongithub a::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 1px;
+  background: #fff; }
+
+#forkongithub a::after {
+  bottom: 1px;
+  top: auto; }
+
+#forkongithub {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 200px;
+  overflow: hidden;
+  height: 200px; }
+
+#forkongithub a {
+  width: 200px;
+  position: absolute;
+  top: 60px;
+  right: -60px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99999; }
+
+html, body, main {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quattrocento', serif;
+  font-size: 18px; }
+
+header {
+  margin: 0;
+  padding-top: 268px;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  header > #logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -480px;
+    background: url("../img/ohana-logo.png");
+    background-attachment: fixed;
+    background-position: 50% 0%;
+    width: 960px;
+    height: 274px;
+    background-repeat: no-repeat;
+    color: #fff;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1px;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+main {
+  position: relative;
+  min-width: 960px;
+  overflow: hidden; }
+
+main > section > div {
+  padding: 10px;
+  margin: 0 auto; }
+
+main > section .button a,
+main > section .button a:visited {
+  text-decoration: none;
+  color: #fff6b1; }
+
+main > section .button a:hover {
+  color: #ffeb1b;
+  border: 1px solid #ffeb1b;
+  -webkit-transition: border 150ms;
+  -moz-transition: border 150ms;
+  transition: border 150ms; }
+
+main #talking-points {
+  background: #0c94d2; }
+  main #talking-points > .content {
+    max-width: 900px;
+    font-size: 22px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 100px;
+    margin: 0 auto; }
+    main #talking-points > .content > h2 {
+      font-size: 36px;
+      color: white; }
+
+main #external-links {
+  background: url("../img/dot.png"), url("../img/dot.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: left,right;
+  position: relative;
+  padding-top: 80px; }
+  main #external-links > #houses {
+    background: url("../img/houses.png");
+    max-width: 800px;
+    height: 387px;
+    background-repeat: no-repeat; }
+  main #external-links > .content {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -80px;
+    max-width: 400px;
+    font-size: 22px;
+    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 40px; }
+    main #external-links > .content > h2 {
+      font-size: 36px;
+      color: black; }
+    main #external-links > .content ul {
+      margin-top: 10px; }
+    main #external-links > .content li {
+      margin-bottom: 10px; }
+
+.star {
+  color: #b54868;
+  font-size: 24px !important; }
+
+main #roadmap {
+  background: #49ba81;
+  margin: 0 auto; }
+  main #roadmap > .content {
+    max-width: 800px;
+    font-size: 22px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 100px;
+    margin: 0 auto;
+    text-align: center; }
+    main #roadmap > .content > h2 {
+      font-size: 36px;
+      color: white; }
+    main #roadmap > .content p {
+      width: 600px;
+      margin: 0 auto; }
+    main #roadmap > .content > div {
+      margin-bottom: 40px; }
+    main #roadmap > .content #smcconnect {
+      background: url("../img/smcconnect.png");
+      width: 600px;
+      height: 370px;
+      background-repeat: no-repeat;
+      margin: 20px auto;
+      -webkit-box-shadow: 0px 0px 5px #333333;
+      -moz-box-shadow: 0px 0px 5px #333333;
+      box-shadow: 0px 0px 5px #333333; }
+
+main #contribute {
+  background: url("../img/dot.png"), url("../img/dot.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: left,right;
+  padding-top: 200px;
+  position: relative; }
+  main #contribute > #database {
+    background: url("../img/db.png");
+    width: 960px;
+    height: 387px;
+    background-repeat: no-repeat;
+    background-position: right; }
+  main #contribute > .content {
+    position: absolute;
+    max-width: 400px;
+    left: 50%;
+    margin-left: -400px;
+    padding: 0;
+    top: 80px; }
+    main #contribute > .content > h1 {
+      font-size: 36px; }
+    main #contribute > .content ul {
+      margin-top: 10px; }
+    main #contribute > .content li {
+      margin-bottom: 10px;
+      font-size: 22px; }
+
+#contribute form label {
+  font-weight: bold;
+  font-size: 22px; }
+#contribute form input, #contribute form textarea {
+  margin-bottom: 10px;
+  border: none;
+  background: #ccc;
+  background: rgba(181, 72, 104, 0.1);
+  width: 100%;
+  padding: 10px; }
+
+#contribute button {
+  margin: 0px;
+  font-family: 'Quattrocento', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 13px;
+  padding: 16px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffebff;
+  cursor: pointer;
+  margin-right: 20px;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffc661));
+  background: -webkit-linear-gradient(top, #ffffff, #ffc661);
+  background: -moz-linear-gradient(top, #ffffff, #ffc661);
+  background: -o-linear-gradient(top, #ffffff, #ffc661);
+  background: linear-gradient(top, #ffffff, #ffc661); }
+
+#contribute button:hover {
+  border: 1px solid black;
+  cursor: pointer; }
+
+#press {
+  margin: 0 auto; }
+  #press > .content {
+    max-width: 800px;
+    font-size: 22px;
+    padding: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000; }
+    #press > .content > h1 {
+      font-size: 36px; }
+    #press > .content ul {
+      margin-top: 10px; }
+    #press > .content li {
+      margin-bottom: 10px;
+      font-size: 22px; }
+
+main .button {
+  margin-top: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top; }
+
+.button a {
+  margin: 0; }
+
+main > section .button a {
+  margin: 0px;
+  font-family: 'Quattrocento', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 13px;
+  padding: 16px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffebff;
+  cursor: pointer;
+  margin-right: 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 180px; }
+
+.external a {
+  background: #83b41a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #83b41a 0%, #77a318 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83b41a), color-stop(100%, #77a318));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #83b41a 0%, #77a318 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #83b41a 0%, #77a318 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #83b41a 0%, #77a318 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #83b41a 0%, #77a318 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#83b41a', endColorstr='#77a318',GradientType=0 );
+  /* IE6-9 */ }
+
+.internal a {
+  background: #0596d5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0596d5 0%, #057aad 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0596d5), color-stop(100%, #057aad));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #0596d5 0%, #057aad 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #0596d5 0%, #057aad 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #0596d5 0%, #057aad 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #0596d5 0%, #057aad 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0596d5', endColorstr='#057aad',GradientType=0 );
+  /* IE6-9 */ }
+
+main #challenges {
+  background: #ffc661;
+  height: 100px; }
+
+footer {
+  padding-top: 20px;
+  margin-top: 20px;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center; }
+
+footer > p {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+footer .share-btns div {
+  display: inline-block; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* Prevent callout */
+.nocallout {
+  -webkit-touch-callout: none; }
+
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {
+  -webkit-appearance: none; }
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+.gifhidden {
+  position: absolute;
+  left: -100%; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em; }
+
+.ir br {
+  display: none; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  header {
+    padding-top: 168px; }
+    header #logo {
+      background-image: url("../img/ohana-logo-mid.png"); }
+
+  main,
+  main > section {
+    min-width: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  main #talking-points > .content,
+  main #roadmap > .content,
+  main #contribute > .content,
+  main #external-links > .content {
+    width: 100%;
+    min-width: 100%;
+    position: static;
+    margin: 0px;
+    margin-top: 0;
+    padding: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  main #contribute {
+    padding-top: 0px; }
+
+  #database {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  /* Style adjustments for viewports that meet the condition */
+  #forkongithub {
+    position: static; }
+
+  #forkongithub a {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    display: block;
+    padding: 5px 0px; }
+
+  header {
+    padding-top: 180px; }
+    header #logo {
+      background-image: url("../img/ohana-logo-sm.png");
+      background-position: center 60px;
+      width: 100%;
+      margin: 0;
+      left: 50%;
+      margin-left: -50%; }
+
+  main,
+  main > section {
+    min-width: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  main #contribute,
+  main #external-links {
+    background: none; }
+
+  main #talking-points > .content,
+  main #roadmap > .content,
+  main #contribute > .content,
+  main #external-links > .content {
+    width: 100%;
+    min-width: 100%;
+    position: static;
+    margin: 0px;
+    margin-top: 0;
+    padding: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  main #contribute {
+    padding-top: 0px; }
+
+  main #roadmap p {
+    width: 100% !important; }
+  main #roadmap #smcconnect {
+    display: none; }
+
+  #database {
+    display: none; }
+
+  main > section .button a {
+    letter-spacing: 0px;
+    font-size: 18px; }
+
+  main > section > div,
+  #challenges figure {
+    width: auto; }
+
+  #diagram img,
+  #challenges img {
+    width: 100%; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for viewports that meet the condition */ }
