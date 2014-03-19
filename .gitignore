@@ -1,0 +1,8 @@
+node_modules/*
+.sass-cache/
+
+# Ignore temporary files
+www/
+www/*
+tmp/
+tmp/*
