@@ -1,6 +1,7 @@
 module.exports = function(grunt){
 
 	grunt.loadNpmTasks('grunt-browserify');
+	grunt.loadNpmTasks('grunt-contrib-jshint')
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-clean');
@@ -8,6 +9,16 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-gh-pages');
 
 	grunt.initConfig({
+		jshint: {
+			options:{
+	      eqeqeq: true,
+	      eqnull: true,
+	      browser: true
+			},
+			files: {
+        src: ['src/js/**/*.js']
+      }
+		}, // jshint
 		browserify: {
       production: {
         src: ['src/main.js'],
@@ -62,6 +73,6 @@ module.exports = function(grunt){
 	}) //initConfig
 
 	grunt.registerTask('default', 'watch');
-	grunt.registerTask('production', ['browserify:production','compass:compile','clean','copy','gh-pages','clean']);
+	grunt.registerTask('production', ['jshint','browserify:production','compass:compile','clean','copy','gh-pages','clean']);
 	grunt.registerTask('development', ['browserify:production','compass:compile','clean','copy']);
 } //exports
