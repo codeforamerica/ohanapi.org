@@ -274,10 +274,10 @@ main #roadmap {
       margin: 0 auto; }
     main #roadmap > .content > div {
       margin-bottom: 40px; }
-    main #roadmap > .content #smcconnect {
-      background: url("../img/smcconnect.png");
+    main #roadmap > .content #smc-connect {
+      background: url("../img/smc-connect.png");
       width: 600px;
-      height: 370px;
+      height: 407px;
       background-repeat: no-repeat;
       margin: 20px auto;
       -webkit-box-shadow: 0px 0px 5px #333333;
@@ -294,9 +294,9 @@ main #contribute {
   main #contribute > #database {
     background: url("../img/db.png");
     width: 960px;
-    height: 387px;
+    height: 487px;
     background-repeat: no-repeat;
-    background-position: right; }
+    background-position: right bottom; }
   main #contribute > .content {
     position: absolute;
     max-width: 400px;
@@ -653,7 +653,7 @@ textarea[contenteditable] {
 
   main #roadmap p {
     width: 100% !important; }
-  main #roadmap #smcconnect {
+  main #roadmap #smc-connect {
     display: none; }
 
   #database {
