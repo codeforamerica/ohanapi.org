@@ -5,10 +5,10 @@ The ohanapi.org website for the [Ohana API](https://github.com/codeforamerica/oh
 
 ## Requirements
 
-**NodeJS & npm**
+**NodeJS & npm**.
 Use the how-to on [installing NodeJS & npm](https://github.com/codeforamerica/howto/blob/master/Node.js.md).
 
-**GruntJS**
+**GruntJS**.
 Check that the `grunt` command works from a terminal window. If not, you will need to install the grunt command-line tool. Type `sudo npm install -g grunt-cli` to do this.
 
 ## Instructions
