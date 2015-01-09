@@ -146,7 +146,7 @@
         }
         this.reset(event);
         this.handler.apply(event.currentTarget, [event]);
-        if (event.type == 'touchend') {
+        if (event.type === 'touchend') {
             MBP.preventGhostClick(this.startX, this.startY);
         }
         var pattern = new RegExp(' ?' + this.pressedClass, 'gi');
@@ -199,7 +199,7 @@
     // This bug only affects touch Android 2.3 devices, but a simple ontouchstart test creates a false positive on
     // some Blackberry devices. https://github.com/Modernizr/Modernizr/issues/372
     // The browser sniffing is to avoid the Blackberry case. Bah
-    MBP.dodgyAndroid = ('ontouchstart' in window) && (navigator.userAgent.indexOf('Android 2.3') != -1);
+    MBP.dodgyAndroid = ('ontouchstart' in window) && (navigator.userAgent.indexOf('Android 2.3') !== -1);
 
     if (document.addEventListener) {
         document.addEventListener('click', MBP.ghostClickHandler, true);
@@ -219,7 +219,7 @@
             try {
                 el.addEventListener(evt, fn, bubble);
             } catch(e) {
-                if (typeof fn == 'object' && fn.handleEvent) {
+                if (typeof fn === 'object' && fn.handleEvent) {
                     el.addEventListener(evt, function(e){
                         // Bind fn as this and set first arg as event object
                         fn.handleEvent.call(fn,e);
@@ -230,7 +230,7 @@
             }
         } else if ('attachEvent' in el) {
             // check if the callback is an object and contains handleEvent
-            if (typeof fn == 'object' && fn.handleEvent) {
+            if (typeof fn === 'object' && fn.handleEvent) {
                 el.attachEvent('on' + evt, function(){
                     // Bind fn as this
                     fn.handleEvent.call(fn);
@@ -247,7 +247,7 @@
             try {
                 el.removeEventListener(evt, fn, bubble);
             } catch(e) {
-                if (typeof fn == 'object' && fn.handleEvent) {
+                if (typeof fn === 'object' && fn.handleEvent) {
                     el.removeEventListener(evt, function(e){
                         // Bind fn as this and set first arg as event object
                         fn.handleEvent.call(fn,e);
@@ -258,7 +258,7 @@
             }
         } else if ('detachEvent' in el) {
             // check if the callback is an object and contains handleEvent
-            if (typeof fn == 'object' && fn.handleEvent) {
+            if (typeof fn === 'object' && fn.handleEvent) {
                 el.detachEvent("on" + evt, function() {
                     // Bind fn as this
                     fn.handleEvent.call(fn);
@@ -286,10 +286,13 @@
         var setLineHeight = (lh) ? lh : 12;
         var textLineHeight = element.currentStyle ? element.currentStyle.lineHeight : getComputedStyle(element, null).lineHeight;
 
-        textLineHeight = (textLineHeight.indexOf('px') == -1) ? setLineHeight : parseInt(textLineHeight, 10);
+        textLineHeight = (textLineHeight.indexOf('px') === -1) ? setLineHeight : parseInt(textLineHeight, 10);
 
         element.style.overflow = 'hidden';
-        element.addEventListener ? element.addEventListener('input', handler, false) : element.attachEvent('onpropertychange', handler);
+        if (element.addEventListener)
+            element.addEventListener('input', handler, false);
+        else
+            element.attachEvent('onpropertychange', handler);
     };
 
     /**
@@ -304,7 +307,7 @@
     /**
      * Prevent default scrolling on document window
      */
-     
+
     MBP.preventScrolling = function() {
         document.addEventListener('touchmove', function(e) {
             if (e.target.type === 'range') { return; }
@@ -323,6 +326,7 @@
         var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
         var i = 0;
 
+        /* jshint ignore:start */
         for (i = 0; i < formFields.length; i++) {
             formFields[i].onfocus = function() {
                 MBP.viewportmeta.content = contentString + '1';
@@ -331,6 +335,7 @@
                 MBP.viewportmeta.content = contentString + '10';
             };
         }
+        /* jshint ignore:end */
     };
 
     /**
