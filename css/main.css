@@ -1,6 +1,7 @@
 /* ==========================================================================
    Compass imports
    ========================================================================== */
+/* line 17, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,30 +22,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
+  /* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -58,6 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/* line 34, ../sass/main.scss */
 html,
 button,
 input,
@@ -65,28 +75,34 @@ select,
 textarea {
   color: #222; }
 
+/* line 38, ../sass/main.scss */
 body {
   font-size: 1em;
   line-height: 1.4; }
 
+/* line 43, ../sass/main.scss */
 a {
   color: #00e; }
 
+/* line 47, ../sass/main.scss */
 a:visited {
   color: #551a8b; }
 
+/* line 51, ../sass/main.scss */
 a:hover {
   color: #06e; }
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
+/* line 59, ../sass/main.scss */
 img {
   vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
+/* line 67, ../sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -95,12 +111,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
+/* line 77, ../sass/main.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* line 86, ../sass/main.scss */
 #forkongithub a {
   background: #03497e;
   color: #fff;
@@ -115,10 +133,12 @@ textarea {
   transition: 0.5s;
   z-index: 99999; }
 
+/* line 101, ../sass/main.scss */
 #forkongithub a:hover {
   background: #0596d5;
   color: #fff; }
 
+/* line 108, ../sass/main.scss */
 #forkongithub a::before,
 #forkongithub a::after {
   content: "";
@@ -130,10 +150,12 @@ textarea {
   height: 1px;
   background: #fff; }
 
+/* line 120, ../sass/main.scss */
 #forkongithub a::after {
   bottom: 1px;
   top: auto; }
 
+/* line 125, ../sass/main.scss */
 #forkongithub {
   position: absolute;
   display: block;
@@ -143,6 +165,7 @@ textarea {
   overflow: hidden;
   height: 200px; }
 
+/* line 135, ../sass/main.scss */
 #forkongithub a {
   width: 200px;
   position: absolute;
@@ -156,18 +179,21 @@ textarea {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 99999; }
 
+/* line 147, ../sass/main.scss */
 html, body, main {
   margin: 0;
   padding: 0;
   font-family: 'Quattrocento', serif;
   font-size: 18px; }
 
+/* line 155, ../sass/main.scss */
 header {
   margin: 0;
   padding-top: 268px;
   position: relative;
   width: 100%;
   overflow: hidden; }
+  /* line 166, ../sass/main.scss */
   header > #logo {
     position: absolute;
     top: 0;
@@ -187,20 +213,24 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+/* line 186, ../sass/main.scss */
 main {
   position: relative;
   min-width: 960px;
   overflow: hidden; }
 
+/* line 194, ../sass/main.scss */
 main > section > div {
   padding: 10px;
   margin: 0 auto; }
 
+/* line 201, ../sass/main.scss */
 main > section .button a,
 main > section .button a:visited {
   text-decoration: none;
   color: #fff6b1; }
 
+/* line 207, ../sass/main.scss */
 main > section .button a:hover {
   color: #ffeb1b;
   border: 1px solid #ffeb1b;
@@ -208,8 +238,10 @@ main > section .button a:hover {
   -moz-transition: border 150ms;
   transition: border 150ms; }
 
+/* line 217, ../sass/main.scss */
 main #talking-points {
   background: #0c94d2; }
+  /* line 220, ../sass/main.scss */
   main #talking-points > .content {
     max-width: 900px;
     font-size: 22px;
@@ -217,10 +249,12 @@ main #talking-points {
     color: rgba(255, 255, 255, 0.7);
     padding: 100px;
     margin: 0 auto; }
+    /* line 229, ../sass/main.scss */
     main #talking-points > .content > h2 {
       font-size: 36px;
       color: white; }
 
+/* line 238, ../sass/main.scss */
 main #external-links {
   background: url("../img/dot.png"), url("../img/dot.png");
   background-repeat: repeat-y;
@@ -228,11 +262,13 @@ main #external-links {
   background-position: left,right;
   position: relative;
   padding-top: 80px; }
+  /* line 247, ../sass/main.scss */
   main #external-links > #houses {
     background: url("../img/houses.png");
     max-width: 800px;
     height: 387px;
     background-repeat: no-repeat; }
+  /* line 255, ../sass/main.scss */
   main #external-links > .content {
     position: absolute;
     top: 40px;
@@ -243,21 +279,27 @@ main #external-links {
     color: #fff;
     color: rgba(0, 0, 0, 0.7);
     padding: 40px; }
+    /* line 267, ../sass/main.scss */
     main #external-links > .content > h2 {
       font-size: 36px;
       color: black; }
+    /* line 273, ../sass/main.scss */
     main #external-links > .content ul {
       margin-top: 10px; }
+    /* line 277, ../sass/main.scss */
     main #external-links > .content li {
       margin-bottom: 10px; }
 
+/* line 284, ../sass/main.scss */
 .star {
   color: #b54868;
   font-size: 24px !important; }
 
+/* line 290, ../sass/main.scss */
 main #roadmap {
   background: #49ba81;
   margin: 0 auto; }
+  /* line 295, ../sass/main.scss */
   main #roadmap > .content {
     max-width: 800px;
     font-size: 22px;
@@ -266,24 +308,29 @@ main #roadmap {
     padding: 100px;
     margin: 0 auto;
     text-align: center; }
+    /* line 305, ../sass/main.scss */
     main #roadmap > .content > h2 {
       font-size: 36px;
       color: white; }
+    /* line 311, ../sass/main.scss */
     main #roadmap > .content p {
       width: 600px;
       margin: 0 auto; }
+    /* line 317, ../sass/main.scss */
     main #roadmap > .content > div {
       margin-bottom: 40px; }
-    main #roadmap > .content #smc-connect {
-      background: url("../img/smc-connect.png");
+    /* line 322, ../sass/main.scss */
+    main #roadmap > .content #smcconnect {
+      background: url("../img/smcconnect.png");
       width: 600px;
-      height: 407px;
+      height: 370px;
       background-repeat: no-repeat;
       margin: 20px auto;
       -webkit-box-shadow: 0px 0px 5px #333333;
       -moz-box-shadow: 0px 0px 5px #333333;
       box-shadow: 0px 0px 5px #333333; }
 
+/* line 334, ../sass/main.scss */
 main #contribute {
   background: url("../img/dot.png"), url("../img/dot.png");
   background-repeat: repeat-y;
@@ -291,12 +338,14 @@ main #contribute {
   background-position: left,right;
   padding-top: 200px;
   position: relative; }
+  /* line 343, ../sass/main.scss */
   main #contribute > #database {
     background: url("../img/db.png");
     width: 960px;
-    height: 487px;
+    height: 387px;
     background-repeat: no-repeat;
     background-position: right bottom; }
+  /* line 352, ../sass/main.scss */
   main #contribute > .content {
     position: absolute;
     max-width: 400px;
@@ -304,17 +353,22 @@ main #contribute {
     margin-left: -400px;
     padding: 0;
     top: 80px; }
+    /* line 361, ../sass/main.scss */
     main #contribute > .content > h1 {
       font-size: 36px; }
+    /* line 366, ../sass/main.scss */
     main #contribute > .content ul {
       margin-top: 10px; }
+    /* line 370, ../sass/main.scss */
     main #contribute > .content li {
       margin-bottom: 10px;
       font-size: 22px; }
 
+/* line 380, ../sass/main.scss */
 #contribute form label {
   font-weight: bold;
   font-size: 22px; }
+/* line 385, ../sass/main.scss */
 #contribute form input, #contribute form textarea {
   margin-bottom: 10px;
   border: none;
@@ -323,6 +377,7 @@ main #contribute {
   width: 100%;
   padding: 10px; }
 
+/* line 396, ../sass/main.scss */
 #contribute button {
   margin: 0px;
   font-family: 'Quattrocento', serif;
@@ -346,26 +401,33 @@ main #contribute {
   background: -o-linear-gradient(top, #ffffff, #ffc661);
   background: linear-gradient(top, #ffffff, #ffc661); }
 
+/* line 413, ../sass/main.scss */
 #contribute button:hover {
   border: 1px solid black;
   cursor: pointer; }
 
+/* line 419, ../sass/main.scss */
 #press {
   margin: 0 auto; }
+  /* line 423, ../sass/main.scss */
   #press > .content {
     max-width: 800px;
     font-size: 22px;
     padding: 80px;
     margin: 0 auto;
     border-bottom: 1px solid #000; }
+    /* line 431, ../sass/main.scss */
     #press > .content > h1 {
       font-size: 36px; }
+    /* line 436, ../sass/main.scss */
     #press > .content ul {
       margin-top: 10px; }
+    /* line 440, ../sass/main.scss */
     #press > .content li {
       margin-bottom: 10px;
       font-size: 22px; }
 
+/* line 449, ../sass/main.scss */
 main .button {
   margin-top: 20px;
   display: -moz-inline-stack;
@@ -376,9 +438,11 @@ main .button {
   *display: inline;
   vertical-align: top; }
 
+/* line 457, ../sass/main.scss */
 .button a {
   margin: 0; }
 
+/* line 462, ../sass/main.scss */
 main > section .button a {
   margin: 0px;
   font-family: 'Quattrocento', serif;
@@ -401,6 +465,7 @@ main > section .button a {
   vertical-align: top;
   width: 180px; }
 
+/* line 479, ../sass/main.scss */
 .external a {
   background: #83b41a;
   /* Old browsers */
@@ -419,6 +484,7 @@ main > section .button a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#83b41a', endColorstr='#77a318',GradientType=0 );
   /* IE6-9 */ }
 
+/* line 491, ../sass/main.scss */
 .internal a {
   background: #0596d5;
   /* Old browsers */
@@ -437,10 +503,12 @@ main > section .button a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0596d5', endColorstr='#057aad',GradientType=0 );
   /* IE6-9 */ }
 
+/* line 503, ../sass/main.scss */
 main #challenges {
   background: #ffc661;
   height: 100px; }
 
+/* line 509, ../sass/main.scss */
 footer {
   padding-top: 20px;
   margin-top: 20px;
@@ -449,10 +517,12 @@ footer {
   font-size: 13px;
   text-align: center; }
 
+/* line 519, ../sass/main.scss */
 footer > p {
   margin-left: 20px;
   margin-right: 20px; }
 
+/* line 525, ../sass/main.scss */
 footer .share-btns div {
   display: inline-block; }
 
@@ -460,18 +530,22 @@ footer .share-btns div {
    Helper classes
    ========================================================================== */
 /* Prevent callout */
+/* line 537, ../sass/main.scss */
 .nocallout {
   -webkit-touch-callout: none; }
 
+/* line 541, ../sass/main.scss */
 .pressed {
   background-color: rgba(0, 0, 0, 0.7); }
 
 /* A hack for HTML5 contenteditable attribute on mobile */
+/* line 547, ../sass/main.scss */
 textarea[contenteditable] {
   -webkit-appearance: none; }
 
 /* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
    they have been set as display: none */
+/* line 554, ../sass/main.scss */
 .gifhidden {
   position: absolute;
   left: -100%; }
@@ -479,6 +553,7 @@ textarea[contenteditable] {
 /*
  * Image replacement
  */
+/* line 563, ../sass/main.scss */
 .ir {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -489,12 +564,14 @@ textarea[contenteditable] {
   text-align: left;
   text-indent: -999em; }
 
+/* line 574, ../sass/main.scss */
 .ir br {
   display: none; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
+/* line 582, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -502,6 +579,7 @@ textarea[contenteditable] {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+/* line 591, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -516,6 +594,7 @@ textarea[contenteditable] {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
+/* line 608, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -528,6 +607,7 @@ textarea[contenteditable] {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
+/* line 621, ../sass/main.scss */
 .invisible {
   visibility: hidden; }
 
@@ -535,11 +615,13 @@ textarea[contenteditable] {
  * Clearfix helper
  * Used to contain floats: h5bp.com/q
  */
+/* line 631, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table; }
 
+/* line 636, ../sass/main.scss */
 .clearfix:after {
   clear: both; }
 
@@ -547,6 +629,7 @@ textarea[contenteditable] {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+/* line 645, ../sass/main.scss */
 .clearfix {
   *zoom: 1; }
 
@@ -560,11 +643,14 @@ textarea[contenteditable] {
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 667, ../sass/main.scss */
   header {
     padding-top: 168px; }
+    /* line 670, ../sass/main.scss */
     header #logo {
       background-image: url("../img/ohana-logo-mid.png"); }
 
+  /* line 677, ../sass/main.scss */
   main,
   main > section {
     min-width: 100%;
@@ -573,6 +659,7 @@ textarea[contenteditable] {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+  /* line 687, ../sass/main.scss */
   main #talking-points > .content,
   main #roadmap > .content,
   main #contribute > .content,
@@ -589,16 +676,20 @@ textarea[contenteditable] {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+  /* line 700, ../sass/main.scss */
   main #contribute {
     padding-top: 0px; }
 
+  /* line 705, ../sass/main.scss */
   #database {
     display: none; } }
 @media only screen and (max-width: 767px) {
   /* Style adjustments for viewports that meet the condition */
+  /* line 715, ../sass/main.scss */
   #forkongithub {
     position: static; }
 
+  /* line 720, ../sass/main.scss */
   #forkongithub a {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -611,8 +702,10 @@ textarea[contenteditable] {
     display: block;
     padding: 5px 0px; }
 
+  /* line 730, ../sass/main.scss */
   header {
     padding-top: 180px; }
+    /* line 733, ../sass/main.scss */
     header #logo {
       background-image: url("../img/ohana-logo-sm.png");
       background-position: center 60px;
@@ -621,6 +714,7 @@ textarea[contenteditable] {
       left: 50%;
       margin-left: -50%; }
 
+  /* line 745, ../sass/main.scss */
   main,
   main > section {
     min-width: 100%;
@@ -629,10 +723,12 @@ textarea[contenteditable] {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+  /* line 753, ../sass/main.scss */
   main #contribute,
   main #external-links {
     background: none; }
 
+  /* line 761, ../sass/main.scss */
   main #talking-points > .content,
   main #roadmap > .content,
   main #contribute > .content,
@@ -649,25 +745,32 @@ textarea[contenteditable] {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
+  /* line 774, ../sass/main.scss */
   main #contribute {
     padding-top: 0px; }
 
+  /* line 781, ../sass/main.scss */
   main #roadmap p {
     width: 100% !important; }
-  main #roadmap #smc-connect {
+  /* line 786, ../sass/main.scss */
+  main #roadmap #smcconnect {
     display: none; }
 
+  /* line 792, ../sass/main.scss */
   #database {
     display: none; }
 
+  /* line 797, ../sass/main.scss */
   main > section .button a {
     letter-spacing: 0px;
     font-size: 18px; }
 
+  /* line 804, ../sass/main.scss */
   main > section > div,
   #challenges figure {
     width: auto; }
 
+  /* line 810, ../sass/main.scss */
   #diagram img,
   #challenges img {
     width: 100%; } }
